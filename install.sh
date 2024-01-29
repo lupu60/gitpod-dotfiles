@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # Install fancy shell
-curl -sS https://starship.rs/install.sh | sh -s - --yes
-echo 'eval "$(starship init bash)"' >> ~/.bashrc
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
 # Install packages
 sudo apt-get update
