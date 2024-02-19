@@ -23,3 +23,12 @@ sudo ln -s "$(realpath ./nvim-linux64/bin/nvim)" /usr/bin/nvim
 
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
+
+# Install aicommits
+if ! command -v npm &> /dev/null
+then
+    echo "npm could not be found, skipping aicommits installation"
+    exit
+fi
+npm install -g aicommits
+aicommits config set OPENAI_KEY=${OPENAI_KEY}
