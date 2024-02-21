@@ -25,6 +25,7 @@ sudo ln -s "$(realpath ./nvim-linux64/bin/nvim)" /usr/bin/nvim
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 
 # Git machete
+sudo apt-get install -y software-properties-common
 sudo add-apt-repository ppa:virtuslab/git-machete
 sudo apt-get update
 sudo apt-get install -y python3-git-machete
