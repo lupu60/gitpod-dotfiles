@@ -30,7 +30,10 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 # sudo apt install -y spr
 
 
-# git-branchless
-curl https://sh.rustup.rs -sSf | sudo sh
-source "$HOME/.cargo/env"
-cargo install git-branchless
+# Aviator
+mkdir -p /workspace/av
+curl -L  https://github.com/aviator-co/av/releases/download/v0.0.30/av_0.0.30_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
+cd /workspace/av
+tar xzvf av.tar.gz
+chmod +x ./av
+sudo ln -s "$(realpath ./av)" /usr/bin/av
