@@ -37,3 +37,4 @@ cd /workspace/av
 tar xzvf av.tar.gz
 chmod +x ./av
 sudo ln -s "$(realpath ./av)" /usr/bin/av
+source <(av completion bash)
