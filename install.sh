@@ -24,8 +24,7 @@ sudo ln -s "$(realpath ./nvim-linux64/bin/nvim)" /usr/bin/nvim
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 
-# Git machete
-sudo apt-get install -y software-properties-common
-sudo add-apt-repository ppa:virtuslab/git-machete
-sudo apt-get update
-sudo apt-get install -y python3-git-machete
+# Git SPR
+echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
+sudo apt update
+sudo apt install spr
