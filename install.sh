@@ -28,3 +28,9 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
 sudo apt update
 sudo apt install -y spr
+
+
+# git-branchless
+curl https://sh.rustup.rs -sSf | sudo sh
+source "$HOME/.cargo/env"
+cargo install git-branchless
