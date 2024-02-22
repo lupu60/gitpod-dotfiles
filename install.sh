@@ -41,4 +41,5 @@ source <(av completion bash)
 
 
 # Git Town
-sudo apt-get install git-town_linux_intel_64.deb --yes
+curl -L https://github.com/git-town/git-town/releases/download/v12.0.2/git-town_linux_intel_64.deb > /workspace/git-town.deb
+sudo apt-get install /workspace/git-town.deb --yes
