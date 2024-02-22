@@ -24,20 +24,20 @@ sudo ln -s "$(realpath ./nvim-linux64/bin/nvim)" /usr/bin/nvim
 # NvChad
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 
-# Git SPR
-echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
-sudo apt update
-sudo apt install -y spr
+# # Git SPR
+# echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
+# sudo apt update
+# sudo apt install -y spr
 
 
-# Aviator
-mkdir -p /workspace/av
-curl -L  https://github.com/aviator-co/av/releases/download/v0.0.30/av_0.0.30_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
-cd /workspace/av
-tar xzvf av.tar.gz
-chmod +x ./av
-sudo ln -s "$(realpath ./av)" /usr/bin/av
-source <(av completion bash)
+# # Aviator
+# mkdir -p /workspace/av
+# curl -L  https://github.com/aviator-co/av/releases/download/v0.0.30/av_0.0.30_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
+# cd /workspace/av
+# tar xzvf av.tar.gz
+# chmod +x ./av
+# sudo ln -s "$(realpath ./av)" /usr/bin/av
+# source <(av completion bash)
 
 
 # Git Town
