@@ -12,7 +12,7 @@ curl https://raw.githubusercontent.com/lupu60/gitpod-dotfiles/main/starship.toml
 sudo apt-get update
 sudo apt-get install htop fzf ripgrep --yes
 sudo apt install bat --yes
-ln -s /usr/bin/batcat /usr/bin/bat
+sudo ln -s /usr/bin/batcat /usr/bin/bat
 export PATH="~/.local/bin:$PATH"
 
 # Lazydocker
