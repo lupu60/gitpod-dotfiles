@@ -10,7 +10,10 @@ curl https://raw.githubusercontent.com/lupu60/gitpod-dotfiles/main/starship.toml
 
 # Install packages
 sudo apt-get update
-sudo apt-get install htop fzf --yes
+sudo apt-get install htop fzf ripgrep --yes
+sudo apt install bat --yes
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
 
 # Lazydocker
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
