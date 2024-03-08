@@ -27,21 +27,21 @@ sudo ln -s "$(realpath ./nvim-linux64/bin/nvim)" /usr/bin/nvim
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 
 # # Git SPR
-# echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
-# sudo apt update
-# sudo apt install -y spr
+echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
+sudo apt update
+sudo apt install -y spr
 
 
 # # Aviator
-# mkdir -p /workspace/av
-# curl -L  https://github.com/aviator-co/av/releases/download/v0.0.30/av_0.0.30_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
-# cd /workspace/av
-# tar xzvf av.tar.gz
-# chmod +x ./av
-# sudo ln -s "$(realpath ./av)" /usr/bin/av
-# source <(av completion bash)
+mkdir -p /workspace/av
+curl -L  https://github.com/aviator-co/av/releases/download/v0.0.30/av_0.0.30_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
+cd /workspace/av
+tar xzvf av.tar.gz
+chmod +x ./av
+sudo ln -s "$(realpath ./av)" /usr/bin/av
+source <(av completion bash)
 
 
-# Git Town
-curl -L https://github.com/git-town/git-town/releases/download/v12.0.2/git-town_linux_intel_64.deb > /workspace/git-town.deb
-sudo apt-get install /workspace/git-town.deb --yes
+# # Git Town
+# curl -L https://github.com/git-town/git-town/releases/download/v12.0.2/git-town_linux_intel_64.deb > /workspace/git-town.deb
+# sudo apt-get install /workspace/git-town.deb --yes
