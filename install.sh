@@ -16,6 +16,7 @@ sudo install lazygit /usr/local/bin
 sudo apt-get update
 sudo apt-get install htop fzf ripgrep bat --yes
 sudo ln -s /usr/bin/batcat /usr/bin/bat
+sudo apt install universal-ctags
 
 
 # Lazydocker
