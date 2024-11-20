@@ -31,10 +31,10 @@ sudo apt install universal-ctags
 # NvChad
 # git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim -Es
 
-# # Git SPR
-# echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
-# sudo apt update
-# sudo apt install -y spr
+# Git SPR
+echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
+sudo apt update
+sudo apt install -y spr
 
 
 # # Aviator
