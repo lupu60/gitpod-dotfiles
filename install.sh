@@ -39,7 +39,7 @@ sudo apt install universal-ctags
 
 # # Aviator
 mkdir -p /workspace/av
-curl -L  https://github.com/aviator-co/av/releases/download/v0.0.30/av_0.0.30_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
+curl -L  https://github.com/aviator-co/av/releases/download/v0.0.44/av_0.0.44_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
 cd /workspace/av
 tar xzvf av.tar.gz
 chmod +x ./av
