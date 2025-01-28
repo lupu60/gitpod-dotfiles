@@ -50,3 +50,8 @@ source <(av completion bash)
 # # Git Town
 # curl -L https://github.com/git-town/git-town/releases/download/v12.0.2/git-town_linux_intel_64.deb > /workspace/git-town.deb
 # sudo apt-get install /workspace/git-town.deb --yes
+
+
+if test -v WAKATIME_API; then {
+    printf '%s\n' '[settings]' "api_key = ${WAKATIME_API}"  "hide_file_names = true"  "hide_project_names = true"  "hide_dependencies = true"  "hide_branch_names = true"  "hide_project_folder = true" > "$HOME/.wakatime.cfg";
+} fi
