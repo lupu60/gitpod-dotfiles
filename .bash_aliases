@@ -11,5 +11,11 @@ git config --global alias.cmpn '!f() { git add -A && git commit -m "$@" --no-ver
 git config --global alias.cmp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 git config --global alias.ac '!f() { git add -A && git commit -m "$@"; }; f'
 
+git config --global alias.s status
+git config --global alias.c commit  
+git config --global alias.co checkout
+git config --global alias.p push  
+git config --global alias.pl pull
+
 # Add custom bin folder
 export PATH=$HOME/.local/bin:$PATH
