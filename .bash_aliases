@@ -17,5 +17,7 @@ git config --global alias.co checkout
 git config --global alias.p push  
 git config --global alias.pl pull
 
+alias githist='git log --abbrev-commit --oneline $(git merge-base origin/dev HEAD)^..HEAD'
+
 # Add custom bin folder
 export PATH=$HOME/.local/bin:$PATH
