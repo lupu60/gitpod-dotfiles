@@ -13,14 +13,14 @@ sudo apt-get install htop fzf ripgrep bat --yes
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 # sudo apt install universal-ctags
 
-# Lazygit
-LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-tar xf lazygit.tar.gz lazygit
-sudo install lazygit /usr/local/bin
+# # Lazygit
+# LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+# curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+# tar xf lazygit.tar.gz lazygit
+# sudo install lazygit /usr/local/bin
 
 # Lazydocker
-curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+# curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
 # Git SPR
 # echo "deb [trusted=yes] https://apt.fury.io/inigolabs/ /" | sudo tee /etc/apt/sources.list.d/inigolabs.list
@@ -39,8 +39,8 @@ curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/i
 
 
 # # Git Town
-curl -L https://github.com/git-town/git-town/releases/download/v12.0.2/git-town_linux_intel_64.deb > /workspace/git-town.deb
-sudo apt-get install /workspace/git-town.deb --yes
+# curl -L https://github.com/git-town/git-town/releases/download/v12.0.2/git-town_linux_intel_64.deb > /workspace/git-town.deb
+# sudo apt-get install /workspace/git-town.deb --yes
 
 
 # Wakatime
@@ -54,3 +54,9 @@ VER=`curl -s "https://api.github.com/repos/alexpasmantier/television/releases/la
 curl -LO https://github.com/alexpasmantier/television/releases/download/$VER/television_$VER-1_amd64.deb
 echo $VER
 sudo dpkg -i television_$VER-1_amd64.deb
+
+
+# uv 
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv venv
+uv pip install stack-pr
