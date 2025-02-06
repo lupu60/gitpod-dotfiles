@@ -11,6 +11,7 @@ curl https://raw.githubusercontent.com/lupu60/gitpod-dotfiles/main/starship.toml
 sudo apt-get update
 sudo apt-get install htop fzf ripgrep bat --yes
 sudo ln -s /usr/bin/batcat /usr/bin/bat
+
 # sudo apt install universal-ctags
 
 # # Lazygit
@@ -44,9 +45,9 @@ sudo ln -s /usr/bin/batcat /usr/bin/bat
 
 
 # Wakatime
-if test -v WAKATIME_API; then {
-    printf '%s\n' '[settings]' "api_key = ${WAKATIME_API}"  "hide_file_names = true"  "hide_project_names = false"  "hide_dependencies = true"  "hide_branch_names = true"  "hide_project_folder = true"  "hostname = workhorse" "debug = false" > "$HOME/.wakatime.cfg";
-} fi
+# if test -v WAKATIME_API; then {
+#     printf '%s\n' '[settings]' "api_key = ${WAKATIME_API}"  "hide_file_names = true"  "hide_project_names = false"  "hide_dependencies = true"  "hide_branch_names = true"  "hide_project_folder = true"  "hostname = workhorse" "debug = false" > "$HOME/.wakatime.cfg";
+# } fi
 
 
 # Television
