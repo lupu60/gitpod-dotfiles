@@ -21,4 +21,3 @@ alias githist='git log --abbrev-commit --oneline $(git merge-base origin/dev HEA
 
 # Add custom bin folder
 export PATH=$HOME/.local/bin:$PATH
-alias code="cursor"
