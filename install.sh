@@ -32,11 +32,9 @@ sudo ln -s $(which fdfind) /bin/fd
 
 # # Aviator
 mkdir -p /workspace/av
-curl -L  https://github.com/aviator-co/av/releases/download/v0.0.44/av_0.0.44_linux_x86_64.tar.gz  > /workspace/av/av.tar.gz
+curl -L  https://github.com/aviator-co/av/releases/download/v0.1.3/av_0.1.3_linux_amd64.deb  > /workspace/av/av.deb
 cd /workspace/av
-tar xzvf av.tar.gz
-chmod +x ./av
-sudo ln -s "$(realpath ./av)" /usr/bin/av
+sudo apt install ./av.deb
 source <(av completion bash)
 
 
