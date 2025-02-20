@@ -19,5 +19,7 @@ git config --global alias.pl pull
 
 alias githist='git log --abbrev-commit --oneline $(git merge-base origin/dev HEAD)^..HEAD'
 
+echo '#!/bin/bash' > ~/.local/code && echo "exec $(which cursor) \"\$@\"" >> ~/.local/code && chmod +x ~/.local/code
+
 # Add custom bin folder
 export PATH=$HOME/.local/bin:$PATH
