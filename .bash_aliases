@@ -21,5 +21,7 @@ alias githist='git log --abbrev-commit --oneline $(git merge-base origin/dev HEA
 
 # mkdir $HOME/.local/bin
 # echo '#!/bin/bash' > ~/.local/bin/code && echo "exec $(which cursor) \"\$@\"" >> ~/.local/bin/code && chmod +x ~/.local/bin/code
-# Add custom bin folder
-export PATH=$HOME/.local/bin:$PATH
+mkdir -p /home/gitpod/bin
+cd /home/gitpod
+ubi --project abhinav/git-spice --exe gs
+export PATH=/home/gitpod/bin:$PATH
