@@ -31,11 +31,11 @@ sudo ln -s $(which fdfind) /bin/fd
 
 
 # # Aviator
-mkdir -p /workspace/av
-curl -L  https://github.com/aviator-co/av/releases/download/v0.1.3/av_0.1.3_linux_amd64.deb  > /workspace/av/av.deb
-cd /workspace/av
-sudo apt install ./av.deb
-source <(av completion bash)
+# mkdir -p /workspace/av
+# curl -L  https://github.com/aviator-co/av/releases/download/v0.1.3/av_0.1.3_linux_amd64.deb  > /workspace/av/av.deb
+# cd /workspace/av
+# sudo apt install ./av.deb
+# source <(av completion bash)
 
 
 # # Git Town
