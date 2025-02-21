@@ -57,6 +57,6 @@ sudo dpkg -i television_$VER-1_amd64.deb
 
 
 # uv 
-# curl -LsSf https://astral.sh/uv/install.sh | sh
-# uv venv
-# uv pip install stack-pr
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv venv
+uv pip install stack-pr
