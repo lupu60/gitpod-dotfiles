@@ -62,7 +62,7 @@ sudo dpkg -i television_$VER-1_amd64.deb
 # uv pip install stack-pr
 
 mkdir -p /home/gitpod/bin
-pushd  /home/gitpod
+cd /home/gitpod/bin  
 curl --silent --location \
     https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
     sh
