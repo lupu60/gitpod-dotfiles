@@ -61,12 +61,12 @@ sudo dpkg -i television_$VER-1_amd64.deb
 # uv venv
 # uv pip install stack-pr
 
-mkdir -p /home/gitpod/bin
-cd /home/gitpod/bin  
-curl --silent --location \
-    https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
-    sh
-ubi --project abhinav/git-spice --exe gs
-export PATH=/home/gitpod/bin:$PATH
-export PATH=/home/gitpod/bin/bin:$PATH
-cd /workspace/shares/
+# mkdir -p /home/gitpod/bin
+# cd /home/gitpod/bin  
+# curl --silent --location \
+#     https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
+#     sh
+# ubi --project abhinav/git-spice --exe gs
+# export PATH=/home/gitpod/bin:$PATH
+# export PATH=/home/gitpod/bin/bin:$PATH
+# cd /workspace/shares/
