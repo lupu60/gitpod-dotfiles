@@ -68,4 +68,5 @@ curl --silent --location \
     sh
 ubi --project abhinav/git-spice --exe gs
 export PATH=/home/gitpod/bin:$PATH
+export PATH=/home/gitpod/bin/bin:$PATH
 cd /workspace/shares/
