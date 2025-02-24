@@ -60,3 +60,12 @@ sudo dpkg -i television_$VER-1_amd64.deb
 # curl -LsSf https://astral.sh/uv/install.sh | sh
 # uv venv
 # uv pip install stack-pr
+
+mkdir -p /home/gitpod/bin
+pushd  /home/gitpod
+curl --silent --location \
+    https://raw.githubusercontent.com/houseabsolute/ubi/master/bootstrap/bootstrap-ubi.sh |
+    sh
+ubi --project abhinav/git-spice --exe gs
+export PATH=/home/gitpod/bin:$PATH
+cd /workspace/shares/
