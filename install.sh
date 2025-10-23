@@ -12,7 +12,7 @@ sudo apt-get update
 sudo apt-get install htop fzf ripgrep bat fd-find --yes
 sudo ln -s /usr/bin/batcat /usr/bin/bat
 sudo ln -s $(which fdfind) /bin/fd
-
+sudo npm install -g @anthropic-ai/claude-code -Y
 # sudo apt install universal-ctags
 
 # # Lazygit
