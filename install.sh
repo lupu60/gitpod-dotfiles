@@ -28,10 +28,10 @@ git config --global alias.pl pull
 
 
 # Install fancy shell
-curl -sS https://starship.rs/install.sh | sh -s - --yes
-echo 'eval "$(starship init bash)"' >> ~/.bashrc
-mkdir -p ~/.config
-curl https://raw.githubusercontent.com/lupu60/gitpod-dotfiles/main/starship.toml > ~/.config/starship.toml
+# curl -sS https://starship.rs/install.sh | sh -s - --yes
+# echo 'eval "$(starship init bash)"' >> ~/.bashrc
+# mkdir -p ~/.config
+# curl https://raw.githubusercontent.com/lupu60/gitpod-dotfiles/main/starship.toml > ~/.config/starship.toml
 
 
 # Install packages
